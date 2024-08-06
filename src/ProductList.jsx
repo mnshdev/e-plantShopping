@@ -10,7 +10,7 @@ function ProductList() {
     const [addedToCart, setAddedToCart] = useState({});
     const dispatch = useDispatch();
     const cartItems = useSelector((state) => state.cart.items);
-    
+
     const cartCount = cartItems.length > 0 ? cartItems.length : '';
 
     const plantsArray = [
@@ -220,6 +220,7 @@ function ProductList() {
             ]
         }
     ];
+    
     const styleObj = {
         backgroundColor: '#4CAF50',
         color: '#fff!important',
